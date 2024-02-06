@@ -1,15 +1,10 @@
 import MeetupList from "@/components/meetups/MeetupList";
 import { MongoClient } from "mongodb";
 import React from "react";
-import Head from "next/head";
 
 const HomePage = (props) => {
   return (
     <>
-      <Head>
-        <title>NextJs Meetup</title>
-        <meta name="description" content="NextJs Meetup build using nextjs" />
-      </Head>
       <MeetupList meetups={props.meetups} />
     </>
   );
